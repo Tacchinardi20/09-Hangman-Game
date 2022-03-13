@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boostrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hangman Game</title>
+</head>
+<body>
+    <div class="container"><br>
+        <h1 class="text-center">Hangman</h1>
+        <div class="float-right">
+            Wrong Guesses: <span id="mistakes">0</span> of <span id="maxWrong"></span>
+        </div>
+
+        <div class="text-center">
+            <img id="hangmanPic" src="./Hangman Game Images/0.jpg" alt="Hangman Game Images">
+            <p>Guess the Programming Language :</p>
+            <p id="wordSpotlight">The word to be guessed goes here</p>
+
+            <div id="keyboard"></div>
+            <button class="btn btn-warning" onClick="reset()">Reset</button>
+        </div> 
+    </div>
+
+    <script src="Hangman Game.js"></script>
+</body>
+</html>
